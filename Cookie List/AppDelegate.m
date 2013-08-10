@@ -7,12 +7,14 @@
 //
 
 #import "AppDelegate.h"
+#import <NSRails/NSRails.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[NSRConfig defaultConfig] setAppURL:@"http://rampup.herokuapp.com/"];
+
     return YES;
 }
 							
